@@ -1,0 +1,46 @@
+:root{
+  --very-dark: #1B1A17;
+  --little-dark: #1F1E1B;
+  --dirty-orange: #A35709;
+  --normal-orange: #FF8303;
+  --text-color: #F0E3CA;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("assets/fonts/Roboto-Bold.ttf") format("ttf");
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+}
+
+.small-button {
+  background-color: var(--very-dark);
+  color: var(--text-color);
+  border-radius: 4px;
+  border: solid var(--dirty-orange) 1px;
+  width: 64px;
+  height: 24px;
+  font-size: 0.65rem;
+  font-family: "Roboto", sans-serif;
+}
+.small-button:hover {
+  border-color: var(--normal-orange);
+}
+
+.add-button {
+  background: url("assets/images/plusUnion.svg") no-repeat center;
+  width: 70px;
+  height: 70px;
+  border: solid var(--normal-orange) 2px;
+  border-radius: 8px;
+  background-color: var(--very-dark);
+}
+.add-button:hover {
+  background-color: var(--little-dark);
+}
