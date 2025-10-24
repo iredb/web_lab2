@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDO list</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="script.js" rel="script">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- <div class="popup-stand">
+    <div class="popup-stand" style="display: none;">
         <div class="share-popup">
             <button class="share-option copy"></button>
             <button class="share-option vk"></button>
@@ -16,43 +16,35 @@
             <button class="share-option whatsapp"></button>
             <button class="share-option BAN"></button>
         </div>
-    </div> -->
+    </div>
 
-    <!-- <div class="popup-stand">
+    <div class="popup-stand" data-popup="delete">
         <div class="delete-confirm">
             <span>Delete this task?</span>
             <div class="confirm-buttons">
-                <button class="small-button">Yes</button>
-                <button class="small-button">No</button>
+                <button class="small-button" data-action="confirm-delete">Yes</button>
+                <button class="small-button" data-action="cancel-delete">No</button>
             </div>
         </div>
-    </div> -->
+    </div>
 
-    <!-- <div class="popup-stand">
-        <div class="edit-popup">
-            <input type="text" class="mini-input" placeholder="input...">
-            <textarea class="giga-input" placeholder="input..."></textarea>
+    <div class="popup-stand">
+        <form class="edit-popup" data-form-type="edit" data-entity="task">
+            <input name="title" type="text" class="mini-input" placeholder="input...">
+            <textarea name="description" class="giga-input" placeholder="input..."></textarea>
             <div class="confirm-buttons">
-                <button class="small-button">Yes</button>
-                <button class="small-button">No</button>
+                <button type="button" class="small-button confirm-edit">Yes</button>
+                <button type="button" class="small-button cancel-edit">No</button>
             </div>
-        </div>
-    </div> -->
+        </form>
+    </div>
 
-    <!-- <div class="todo-card">
-        <div class="todo-info">
-            <span class="todo-title">Task Title...</span>
-            <span class="todo-description">Task body about this task...</span>
-        </div>
-        <button class="delete-button"></button>
-    </div> -->
-
-    <form class="add-form">
+    <form class="add-form" data-form-type="create" data-entity="task">
         <div class="add-inputs">
             <input name="title" class="mini-input" placeholder="title">
             <input name="description" type="text" class="mini-input" placeholder="description">
         </div>
-        <button class="add-button"></button>
+        <button type="submit" class="add-button"></button>
     </form>
 
     <div class="no-tasks">
@@ -62,19 +54,17 @@
     </div>
 
     <div class="task-list">
-        <div class="todo-card">
+        <div class="todo-card" style="display: none;">
             <div class="todo-info">
                 <span class="todo-title">Task Title...</span>
                 <span class="todo-description">Task body about this task...</span>
             </div>
             <button class="delete-button"></button>
         </div>
-        <div class="todo-card">
-            <div class="todo-info">
-                <span class="todo-title">Task Title...</span>
-                <span class="todo-description">Task body about this task...</span>
-            </div>
-            <button class="delete-button"></button>
+        <div class="card-options" style="display: none;">
+            <button class="share-button"></button>
+            <button class="info-button"></button>
+            <button class="edit-button"></button>
         </div>
     </div>
 </body>
