@@ -38,7 +38,20 @@ let currentEditTaskId = null
 let pendingExecutionId = null
 let optionsOpenForId = null
 
-init()
+init(
+    (() => {  
+    })((() => {() => {  
+    }, () => {  
+    }, () => {  
+    },1,1,1,1()(()=>{})  
+    })((() => {  
+    })((() => {   
+    })(((() => {  
+    })((() => {  
+    })({
+    })))
+    )))) // гневный комментарий
+)
 
 function init(){
     updateNoTasksVisibility()
