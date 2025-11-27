@@ -1,0 +1,111 @@
+:root {
+  --very-dark: #1B1A17;
+  --little-dark: #1F1E1B;
+  --dirty-orange: #A35709;
+  --normal-orange: #FF8303;
+  --text-color: #F0E3CA;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--normal-orange) var(--very-dark);
+}
+
+body {
+  margin: 0;
+  padding: 1% 25%;
+  background-color: var(--very-dark);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 33px;
+}
+
+span,
+button {
+  color: var(--text-color);
+}
+
+.small-button {
+  background-color: var(--very-dark);
+  color: var(--text-color);
+  border-radius: 4px;
+  border: solid var(--dirty-orange) 1px;
+  width: 64px;
+  height: 24px;
+  font-size: 0.65rem;
+}
+
+.small-button:hover {
+  border-color: var(--normal-orange);
+}
+
+button:hover {
+  background-color: var(--little-dark);
+}
+
+.add-button {
+  background: url("../assets/images/plusUnion.svg") no-repeat center;
+  width: 70px;
+  height: 70px;
+  border: solid var(--normal-orange) 2px;
+  border-radius: 8px;
+  background-color: var(--very-dark);
+}
+
+.add-button:hover {
+  background-color: var(--little-dark);
+}
+
+.delete-button {
+  background: url("../assets/images/xUnion.svg") no-repeat center;
+  width: 32px;
+  height: 32px;
+  border: solid var(--dirty-orange) 2px;
+  border-radius: 5px;
+  background-color: var(--very-dark);
+}
+
+.share-button {
+  background: url("../assets/images/share.svg") no-repeat center;
+  width: 36px;
+  height: 36px;
+  border: solid var(--dirty-orange) 2px;
+  border-radius: 6px;
+  background-color: var(--very-dark);
+}
+
+.edit-button {
+  background: url("../assets/images/edit.svg") no-repeat center;
+  width: 36px;
+  height: 36px;
+  border: solid var(--dirty-orange) 2px;
+  border-radius: 6px;
+  background-color: var(--very-dark);
+}
+
+.info-button {
+  background: url("../assets/images/info.svg") no-repeat center;
+  width: 36px;
+  height: 36px;
+  border: solid var(--dirty-orange) 2px;
+  border-radius: 6px;
+  background-color: var(--very-dark);
+}
+
+.card-options {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}

@@ -1,0 +1,59 @@
+.todo-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-title {
+  font-size: 1.43rem;
+}
+
+.todo-description {
+  font-size: 0.91rem;
+}
+
+.todo-card {
+  width: 345px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: solid var(--dirty-orange) 2px;
+  border-radius: 8px;
+  background-color: var(--little-dark);
+  justify-self: center;
+}
+
+.no-tasks {
+  align-self: center;
+  justify-self: center;
+  font-size: 1.56rem;
+  display: flex;
+  flex-direction: column;
+  margin: 39px;
+}
+
+.no-tasks hr {
+  width: 64%;
+  border-radius: 5000000px;
+}
+
+.add-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-self: center;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
