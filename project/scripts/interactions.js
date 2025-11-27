@@ -230,6 +230,15 @@ function setupCardInteractionDelegation() {
       state.optionsOpenForId = id;
     }
   });
+
+    document.addEventListener("click", (e) => {
+    const clickedInsideCard = e.target.closest(".todo-card");
+    const clickedInsideOptions = e.target.closest(".card-options");
+
+    if (clickedInsideCard || clickedInsideOptions) return;
+
+    hideOptionsMenu();
+  });
 }
 
 function setupOptionsMenuInteraction() {
